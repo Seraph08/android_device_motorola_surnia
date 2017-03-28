@@ -23,6 +23,9 @@
 
     <!-- Opens front camera using openLegacy() -->
     <bool name="front_camera_open_legacy">false</bool>
+
+    <!-- Restart preview for back camera onPictureTaken -->
+    <bool name="back_camera_restart_preview_onPictureTaken">true</bool>
    
     <!-- Force use a specific preview-size
          Example: 540 x 960 -->

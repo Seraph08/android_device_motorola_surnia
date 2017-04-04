@@ -28,3 +28,5 @@ PRODUCT_RELEASE_NAME := surnia
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="Moto E LTE (2nd gen)"
+
+WITH_SU := true

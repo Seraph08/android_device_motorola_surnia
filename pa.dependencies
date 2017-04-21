@@ -18,7 +18,7 @@
     "revision":    "cm-14.1"
   },
   {
-    "remote":      "aospa",
+    "remote":      "github",
     "repository": "AOSPA/android_device_qcom_common",
     "target_path": "device/qcom/common",
     "revision":    "nougat-mr1"

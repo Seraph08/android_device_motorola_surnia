@@ -105,6 +105,6 @@
             <Feature name="adaptive-playback" />
         </MediaCodec>
     </Decoders>
-    <Include href="media_codecs_google_video.xml" />
-    <Include href="media_codecs_ffmpeg.xml" />
+<Include href="media_codecs_google_video.xml" />
+<!--<Include href="media_codecs_ffmpeg.xml" />-->
 </MediaCodecs>

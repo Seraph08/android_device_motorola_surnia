@@ -22,7 +22,6 @@ include device/motorola/msm8916-common/BoardConfigCommon.mk
 DEVICE_PATH := device/motorola/surnia
 
 TARGET_KERNEL_CONFIG := surnia_defconfig
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
 
 # Asserts
 TARGET_OTA_ASSERT_DEVICE := XT1514,XT1521,XT1524,XT1526,XT1527,XT1523,surnia_uds,surnia_umts,surnia,surnia_udstv
@@ -45,5 +44,3 @@ TARGET_POWERHAL_HEADER_PATH := $(DEVICE_PATH)/power
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
-
-$(call inherit-product-if-exists, vendor/motorola/surnia/surnia-vendor.mk)

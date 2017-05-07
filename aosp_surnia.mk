@@ -13,7 +13,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, device/motorola/surnia/full_surnia.mk)
+# Inherit from surnia device
+$(call inherit-product, device/motorola/surnia/device.mk)
+
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, vendor/aosp/common.mk)
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 540
@@ -28,3 +32,6 @@ PRODUCT_RELEASE_NAME := surnia
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="Moto E LTE (2nd gen)"
+
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
+PRODUCT_GMS_CLIENTID_BASE := android-motorola

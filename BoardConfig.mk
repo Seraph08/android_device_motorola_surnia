@@ -45,3 +45,5 @@ TARGET_POWERHAL_HEADER_PATH := $(DEVICE_PATH)/power
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+
+$(call inherit-product-if-exists, vendor/motorola/surnia/surnia-vendor.mk)

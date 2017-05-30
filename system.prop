@@ -1,4 +1,5 @@
 # system.prop for surnia
+ro.build.fingerprint=Motorola E 2nd Gen 7.1.2
 
 # Audio
 persist.audio.fluence.speaker=true

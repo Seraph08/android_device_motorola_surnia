@@ -17,6 +17,17 @@
 # Inherit from surnia device
 $(call inherit-product, device/motorola/surnia/device.mk)
 
+# Add QC Video Enhancements flag
+TARGET_ENABLE_QC_AV_ENHANCEMENTS := true
+
+# Enable features in video HAL that can compile only on this platform
+TARGET_USES_MEDIA_EXTENSIONS := true
+
+#QTIC flag
+-include $(QCPATH)/common/config/qtic-config.mk
+
+-include $(TOPDIR)hardware/qcom/audio/configs/msm8916/msm8916.mk
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := surnia
 PRODUCT_NAME := full_surnia
